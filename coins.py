@@ -1,9 +1,9 @@
-import time,  webbrowser, subprocess
+import time, webbrowser, subprocess
 from coinbase.wallet.client import Client
 import pyautogui
 
 
-# KEYS
+# KEYS, here your personal configuration
 with open('/home/ever/Dropbox/dev/keys/coinbase_api_key.txt') as f:
     api_key = f.read().strip()
 with open('/home/ever/Dropbox/dev/keys/coinbase_api_secret.txt') as f:
