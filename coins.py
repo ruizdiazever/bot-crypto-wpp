@@ -12,12 +12,10 @@ with open('/home/ever/Dropbox/dev/keys/phone_script_coin.txt') as f:
     phone = f.read().strip()
 
 
+# Loop
 while(True):
-
-    # Time loop
-    time.sleep(5)
-    
     # API
+    time.sleep(60)
     client = Client(api_key, api_secret, api_version='YYYY-MM-DD')
     price_btc = client.get_buy_price(currency_pair = 'BTC-EUR')
     price_eth = client.get_buy_price(currency_pair = 'ETH-EUR')
@@ -27,7 +25,7 @@ while(True):
     price_eth = float(price_eth)
     print(f'------------ {time.strftime("%d %b %Y %H:%M:%S")} ------------ \nETH € {price_eth} \nBTC € {price_btc}')
 
-
+    # HIGH PRICE
     if price_btc >= 55000 or price_eth >= 1722:
 
         # Message to send
@@ -50,6 +48,7 @@ while(True):
         time.sleep(2)
         proc = subprocess.Popen(['pkill', 'chrome'])
 
+    # LOW PRICE
     elif price_btc <= 46300 or price_eth <= 1522:
         message = (f'######## SUPER LOW ######## \nBTC price is EUR {price_btc} \nETH price is EUR {price_eth}')
         url = f'https://web.whatsapp.com/send?phone={phone}&text&app_absent=0'
@@ -66,3 +65,4 @@ while(True):
         time.sleep(2)
 
         proc = subprocess.Popen(['pkill', 'chrome'])
+        
