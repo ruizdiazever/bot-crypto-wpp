@@ -26,7 +26,7 @@ $ source coin/bin/activate         # Acivate
     ```
 - Run the script
 
-### Personal notes
+### Raspberry Pi OS configuration
 Install Python 3 in Raspberry Pi OS
 ```
 $ sudo apt update
