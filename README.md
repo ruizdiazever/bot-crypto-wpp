@@ -25,3 +25,24 @@ $ source coin/bin/activate         # Acivate
     $ pip install -r requirements.txt
     ```
 - Run the script
+
+### Personal notes
+Install Python 3 in Raspberry Pi OS
+```
+$ sudo apt update
+$ sudo apt install python3 idle3
+```
+Python 3 configuration
+```
+$ echo "alias python=/usr/bin/python3.7" >> ~/.bashrc
+$ source ~/.bashrc
+```
+Install requirements in Raspberry Pi OS
+```
+$ sudo python3 pip install -r requirements
+```
+
+Run in Raspberry Pi OS
+```
+$ python3 coins.py
+```
