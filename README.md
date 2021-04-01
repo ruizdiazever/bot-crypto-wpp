@@ -1,11 +1,11 @@
 # Script
 - This script automatically sends a message via Whatsapp Web when the price of BTC or ETH is at a set maximum or minimum. (EN)  
-- Este script envia un mensaje automaticamente un mensaje por Whatsapp Web cuando el precio del BTC o ETH se encuenta en un maximo o minimo establecido. (ES)
+- Este script envia un mensaje automaticamente por Whatsapp Web cuando el precio del BTC o ETH se encuenta en un maximo o minimo establecido. (ES)
 
 
 ### Requisitos 📝
 - Linux
-- Google Chrome
+- Chrome, Chromium o Firefox
 - API Key and Secret key from Coinbase with your Coinbase Account
 - Python 3
 - Virtual enviroment (recommended)

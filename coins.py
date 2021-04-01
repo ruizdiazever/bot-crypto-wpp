@@ -17,13 +17,14 @@ with open(raspberry_api_secret) as f:
     api_secret = f.read().strip()
 with open(raspberry_phone) as f:
     phone = f.read().strip()
-
+    
+client = Client(api_key, api_secret, api_version='YYYY-MM-DD')
 
 # Loop
 while(True):
     # API
     time.sleep(2)
-    client = Client(api_key, api_secret, api_version='YYYY-MM-DD')
+    
     price_btc = client.get_buy_price(currency_pair = 'BTC-EUR')
     price_eth = client.get_buy_price(currency_pair = 'ETH-EUR')
     price_btc = price_btc['amount']
