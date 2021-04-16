@@ -11,11 +11,11 @@ raspberry_api_secret = '/home/pi/Desktop/Projects/keys/coinbase_api_secret.txt'
 raspberry_phone = '/home/pi/Desktop/Projects/keys/phone_script_coin.txt'
 
 # KEYS, here your personal configuration
-with open(raspberry_api_key) as f:
+with open(fedora_api_key) as f:
     api_key = f.read().strip()
-with open(raspberry_api_secret) as f:
+with open(fedora_api_secret) as f:
     api_secret = f.read().strip()
-with open(raspberry_phone) as f:
+with open(fedora_phone) as f:
     phone = f.read().strip()
     
 client = Client(api_key, api_secret, api_version='YYYY-MM-DD')
@@ -34,7 +34,7 @@ while(True):
     print(f'------------ {time.strftime("%d %b %Y %H:%M:%S")} ------------ \nETH € {price_eth} \nBTC € {price_btc}')
 
     # HIGH PRICE
-    if price_btc >= 40000 or price_eth >= 1722:
+    if price_btc >= 60000 or price_eth >= 1800:
 
         # Message to send
         message = (f'######## SUPER HIGH ######## \nBTC price is EUR {price_btc} \nETH price is EUR {price_eth}')
@@ -58,7 +58,7 @@ while(True):
         proc = subprocess.Popen(['pkill', 'chromium'])
 
     # LOW PRICE
-    elif price_btc <= 46300 or price_eth <= 1522:
+    elif price_btc <= 45000 or price_eth <= 1650:
         message = (f'######## SUPER LOW ######## \nBTC price is EUR {price_btc} \nETH price is EUR {price_eth}')
         url = f'https://web.whatsapp.com/send?phone={phone}&text&app_absent=0'
 
