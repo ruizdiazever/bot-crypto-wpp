@@ -49,6 +49,7 @@ class Coin:
                 time.sleep(2)
                 proc = subprocess.Popen(['pkill', self.BROWSER])
 
+
 LINUX_API_KEY = '/home/ever/Dropbox/dev/keys/coinbase_api_key.txt'
 LINUX_API_SECRET = '/home/ever/Dropbox/dev/keys/coinbase_api_secret.txt'
 LINUX_PHONE = '/home/ever/Dropbox/dev/keys/phone_script_coin.txt'
