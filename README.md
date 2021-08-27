@@ -1,5 +1,5 @@
 # Bot
-This script automatically sends a message via Whatsapp Web when the price of BTC or ETH is at a set maximum or minimum. 
+This script automatically sends a message via Whatsapp Web when the price of BTC, ETH, ADA or others is at a set maximum or minimum. 
 
 ## Requirements 📝
 - Python 3
