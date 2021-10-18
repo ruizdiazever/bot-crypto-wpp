@@ -4,23 +4,16 @@ This script automatically sends a message via Whatsapp Web when the price of BTC
 ## Requirements 📝
 - Python 3
 - Coinbase API
-- Browser
+- Firefox
 - Linux
 - Whatsapp web
 
 
-## Steps for your enviroment and the Script 👾
-It is recommended that you use a virtual environment to install the necessary packages in it, this is done with the [virtualenv](https://pypi.org/project/virtualenv/) package, if you have doubts go to its documentation to learn how to use it, steps:
-```bash
-$ pip install virtualenv           # Install virtualenv
-$ virtualenv coin                  # Make the coin enviroment
-$ source coin/bin/activate         # Acivate the enviroment
+## Run 👾
+Only for GNU/Linux and Mac OS
 ```
-
-In the project folder ```/coins``` install the required packages and run the program:
-```
-$ pip install -r requirements.txt
-$ python coins.py
+sh run.sh                # Other Linux system 🐧
+sh raspberry.sh          # Raspberry Pi OS 🍓
 ```
 
 ## Raspberry Pi OS configuration 🐧
