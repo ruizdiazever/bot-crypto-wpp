@@ -17,7 +17,7 @@ sh raspberry.sh          # Raspberry Pi OS 🍓
 ```
 
 ## Raspberry Pi OS manual configuration (without Bash Script) 🐧
-Install Python 3 in [Raspberry Pi OS](https://www.raspberrypi.org/software/)
+See more in [Raspberry Pi OS](https://www.raspberrypi.org/software/)
 ```bash
 sudo apt update                                   # Update OS packages
 sudo apt install python3 idle3                    # Install Python 3 in OS
